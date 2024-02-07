@@ -6,6 +6,7 @@ Käyttöönotto
 2. Tallenna kansioon **winscp** sfpt siirtoon tarvittavat tiedostot (WinCSP.exe, WinSCPnet.dll)
    Saat tiedostot esim. https://winscp.net/download/WinSCP-6.1.2-Automation.zip
 3. Kopioi example.config.xml tiedosto tiedostoksi config.xml ja täytä tiedostoon asetukset:
+   - filename (siirtotiedoston nimi, saat tämän esim. lukiolta)
    - SFTP
       - host
       - port
@@ -22,10 +23,10 @@ Käyttöönotto
       Luo näitä varten Primuksessa palvelukäyttäjä, joka pääsee vaaditun koulun tietoihin. Rajoituksen saa helpoiten tehtyä valitsemalla tunnukselle kotikouluksi vain tarvitun koulun. Visman ohjeet: https://help.inschool.fi/LU/fi/Tilastot-tiedonsiirrot-ja-jarjestelmayhteydet/PrimusQuery/PrimusQueryn-kayttoonotto.htm
    Testiympäristön asetukset voi jättää tyhjäksi, jos testaamiselle ei ole tarvetta.
 
-4. Tarkasta TraderiaOpiskelijatunnisteet.pq tiedostosta, että aktiivisten opiskelijoiden haku on koululle sopiva. Oletushaku hakee kaikki arkistoimattomat opiskelijat, joilla on täytettynä henkilötunnniste ja joiden aloituspäivä on menneisyydessä.
+5. Tarkasta TraderiaOpiskelijatunnisteet.pq tiedostosta, että aktiivisten opiskelijoiden haku on koululle sopiva. Oletushaku hakee kaikki arkistoimattomat opiskelijat, joilla on täytettynä henkilötunnniste ja joiden aloituspäivä on menneisyydessä.
    Jos jatkossa käytätte opsikelijatunnisteena muuta kenttää, voi query tiedostoa muokata tarpeen mukaan.
 
-5. Siirto käynnistetään suorittamalla komentojono. Ohjelma:
+6. Siirto käynnistetään suorittamalla komentojono. Ohjelma:
    - hakee primuksesta opiskelijatunnisteet 
    - muotoilee ne kassajärjestelmän vaatimaan muotoon
    - lähettää tiedoston ravintolan palvelimelle
