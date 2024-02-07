@@ -12,11 +12,13 @@ Käyttöönotto
       - UserName
       - Password
       - sshHostKeyFingerprint
+      
       Voit jättää SshPrivateKeyPath kentät tyhjäksi, jos autentikointi tapahtuu salasanalla/lauseella.
    - primusquery
       - host
       - user
       - pass
+      
       Luo näitä varten Primuksessa palvelukäyttäjä, joka pääsee vaaditun koulun tietoihin. Rajoituksen saa helpoiten tehtyä valitsemalla tunnukselle kotikouluksi vain tarvitun koulun. Visman ohjeet: https://help.inschool.fi/LU/fi/Tilastot-tiedonsiirrot-ja-jarjestelmayhteydet/PrimusQuery/PrimusQueryn-kayttoonotto.htm
    Testiympäristön asetukset voi jättää tyhjäksi, jos testaamiselle ei ole tarvetta.
 
