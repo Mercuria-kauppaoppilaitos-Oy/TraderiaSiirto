@@ -1,0 +1,32 @@
+<Configuration>
+	<filename></filename>
+	<logfile>Siirto_log.txt</logfile>
+	<sftp>
+		<!-- PRDOUCTION ENVIROMENT -->
+		<host></host>
+		<port></port>
+		<UserName></UserName>
+		<Password></Password>
+		<sshHostKeyFingerprint></sshHostKeyFingerprint>
+		<SshPrivateKeyPath></SshPrivateKeyPath>
+	</sftp>
+	<test>
+		<sftp>
+			<!-- TEST ENVIROMENT -->
+			<host></host>
+			<port></port>
+			<UserName></UserName>
+			<Password></Password>
+			<sshHostKeyFingerprint></sshHostKeyFingerprint>
+			<SshPrivateKeyPath></SshPrivateKeyPath>
+		</sftp>
+	</test>
+	<primusquery>
+		<exe>.\primusquery\primusquery.exe</exe>
+		<port>2053</port>
+		<host></host>
+		<user></user>
+		<pass></pass>
+		<errorfile>pq_error.txt</errorfile>
+	</primusquery>
+</Configuration>

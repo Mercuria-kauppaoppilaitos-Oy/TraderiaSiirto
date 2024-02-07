@@ -1,0 +1,8 @@
+*_rsa
+*.ppk
+*.pub
+config.xml
+*_log.txt
+*.csv
+*.dll
+*.exe
